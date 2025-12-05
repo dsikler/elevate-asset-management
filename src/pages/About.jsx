@@ -22,7 +22,7 @@ function About() {
             <p>
               We started as a small property management company, but our commitment to 
               excellence and our tenant-first approach has driven our growth. We don't just 
-              manage properties—we invest in them, modernize them, and care for them as if 
+              manage properties, we invest in them, modernize them, and care for them as if 
               they were our own homes.
             </p>
           </div>
@@ -77,7 +77,7 @@ function About() {
             </p>
             <p>
               Our direct management approach means you'll always have a direct line to the owners. 
-              No middlemen, no delays—just honest, reliable service from people who care about 
+              No middlemen, no delays, just honest, reliable service from people who care about 
               your home as much as you do.
             </p>
           </div>
