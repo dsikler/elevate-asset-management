@@ -133,18 +133,38 @@ function Properties() {
                   <div 
                     className="gallery-grid"
                     style={{
-                      gridTemplateColumns: `repeat(${getGridColumns(property.beforeImages.length)}, 1fr)`
+                      gridTemplateColumns: property.id === 'BM' && property.beforeImages.length === 5 
+                        ? 'repeat(3, 1fr)' 
+                        : `repeat(${getGridColumns(property.beforeImages.length)}, 1fr)`
                     }}
                   >
-                    {property.beforeImages.map((image, index) => (
-                      <div key={index} className="gallery-item">
-                        <img 
-                          src={image} 
-                          alt={`${property.name} before ${index + 1}`}
-                          loading="lazy"
-                        />
-                      </div>
-                    ))}
+                    {property.beforeImages.map((image, index) => {
+                      let gridStyle = {}
+                      if (property.id === 'BM' && property.beforeImages.length === 5) {
+                        // Layout: 2 in top row, 3 in second row
+                        if (index < 2) {
+                          // First row: 2 items in columns 1 and 2
+                          gridStyle = { gridColumn: index === 0 ? '1 / 2' : '2 / 3', gridRow: '1 / 2' }
+                        } else {
+                          // Second row: 3 items in columns 1, 2, 3
+                          const col = index - 1
+                          gridStyle = { gridColumn: `${col} / ${col + 1}`, gridRow: '2 / 3' }
+                        }
+                      }
+                      return (
+                        <div 
+                          key={index} 
+                          className="gallery-item"
+                          style={gridStyle}
+                        >
+                          <img 
+                            src={image} 
+                            alt={`${property.name} before ${index + 1}`}
+                            loading="lazy"
+                          />
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
 
@@ -153,18 +173,41 @@ function Properties() {
                   <div 
                     className="gallery-grid"
                     style={{
-                      gridTemplateColumns: `repeat(${getGridColumns(property.afterImages.length)}, 1fr)`
+                      gridTemplateColumns: property.id === 'BM' && property.afterImages.length === 7
+                        ? 'repeat(3, 1fr)'
+                        : `repeat(${getGridColumns(property.afterImages.length)}, 1fr)`
                     }}
                   >
-                    {property.afterImages.map((image, index) => (
-                      <div key={index} className="gallery-item">
-                        <img 
-                          src={image} 
-                          alt={`${property.name} after ${index + 1}`}
-                          loading="lazy"
-                        />
-                      </div>
-                    ))}
+                    {property.afterImages.map((image, index) => {
+                      let gridStyle = {}
+                      if (property.id === 'BM' && property.afterImages.length === 7) {
+                        // Layout: 2 in top row, 3 in middle row, 2 in bottom row
+                        if (index < 2) {
+                          // First row: 2 items in columns 1 and 2
+                          gridStyle = { gridColumn: index === 0 ? '1 / 2' : '2 / 3', gridRow: '1 / 2' }
+                        } else if (index < 5) {
+                          // Second row: 3 items in columns 1, 2, 3
+                          const col = index - 1
+                          gridStyle = { gridColumn: `${col} / ${col + 1}`, gridRow: '2 / 3' }
+                        } else {
+                          // Third row: 2 items in columns 1 and 2
+                          gridStyle = { gridColumn: index === 5 ? '1 / 2' : '2 / 3', gridRow: '3 / 4' }
+                        }
+                      }
+                      return (
+                        <div 
+                          key={index} 
+                          className="gallery-item"
+                          style={gridStyle}
+                        >
+                          <img 
+                            src={image} 
+                            alt={`${property.name} after ${index + 1}`}
+                            loading="lazy"
+                          />
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               </div>
