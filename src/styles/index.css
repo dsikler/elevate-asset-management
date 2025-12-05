@@ -344,8 +344,12 @@ body {
 .properties-hero {
   background: linear-gradient(135deg, var(--primary) 0%, #3d2f26 100%);
   color: var(--white);
-  padding: 60px 20px;
+  padding: 100px 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
 }
 
 .properties-hero h1 {

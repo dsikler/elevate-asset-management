@@ -134,7 +134,7 @@ function Properties() {
                     className="gallery-grid"
                     style={{
                       gridTemplateColumns: property.id === 'BM' && property.beforeImages.length === 5 
-                        ? 'repeat(3, 1fr)' 
+                        ? 'repeat(6, 1fr)' 
                         : `repeat(${getGridColumns(property.beforeImages.length)}, 1fr)`
                     }}
                   >
@@ -143,16 +143,15 @@ function Properties() {
                       if (property.id === 'BM' && property.beforeImages.length === 5) {
                         // Layout: 2 in top row (larger), 3 in second row
                         if (index < 2) {
-                          // First row: 2 items spanning 1.5 columns each, centered
+                          // First row: 2 items, each spanning 2 columns, centered
                           gridStyle = { 
-                            gridColumn: index === 0 ? '1 / 2.5' : '2.5 / 4', 
-                            gridRow: '1 / 2',
-                            justifySelf: 'center'
+                            gridColumn: index === 0 ? '1 / 3' : '4 / 6', 
+                            gridRow: '1 / 2'
                           }
                         } else {
-                          // Second row: 3 items in columns 1, 2, 3
-                          const col = index - 1
-                          gridStyle = { gridColumn: `${col} / ${col + 1}`, gridRow: '2 / 3' }
+                          // Second row: 3 items, each spanning 2 columns
+                          const col = (index - 2) * 2 + 1
+                          gridStyle = { gridColumn: `${col} / ${col + 2}`, gridRow: '2 / 3' }
                         }
                       }
                       return (
@@ -178,7 +177,7 @@ function Properties() {
                     className="gallery-grid"
                     style={{
                       gridTemplateColumns: property.id === 'BM' && property.afterImages.length === 7
-                        ? 'repeat(3, 1fr)'
+                        ? 'repeat(6, 1fr)'
                         : `repeat(${getGridColumns(property.afterImages.length)}, 1fr)`
                     }}
                   >
@@ -187,22 +186,20 @@ function Properties() {
                       if (property.id === 'BM' && property.afterImages.length === 7) {
                         // Layout: 2 in top row (larger), 3 in middle row, 2 in bottom row (larger)
                         if (index < 2) {
-                          // First row: 2 items spanning 1.5 columns each, centered
+                          // First row: 2 items, each spanning 2 columns, centered
                           gridStyle = { 
-                            gridColumn: index === 0 ? '1 / 2.5' : '2.5 / 4', 
-                            gridRow: '1 / 2',
-                            justifySelf: 'center'
+                            gridColumn: index === 0 ? '1 / 3' : '4 / 6', 
+                            gridRow: '1 / 2'
                           }
                         } else if (index < 5) {
-                          // Second row: 3 items in columns 1, 2, 3
-                          const col = index - 1
-                          gridStyle = { gridColumn: `${col} / ${col + 1}`, gridRow: '2 / 3' }
+                          // Second row: 3 items, each spanning 2 columns
+                          const col = (index - 2) * 2 + 1
+                          gridStyle = { gridColumn: `${col} / ${col + 2}`, gridRow: '2 / 3' }
                         } else {
-                          // Third row: 2 items spanning 1.5 columns each, centered
+                          // Third row: 2 items, each spanning 2 columns, centered
                           gridStyle = { 
-                            gridColumn: index === 5 ? '1 / 2.5' : '2.5 / 4', 
-                            gridRow: '3 / 4',
-                            justifySelf: 'center'
+                            gridColumn: index === 5 ? '1 / 3' : '4 / 6', 
+                            gridRow: '3 / 4'
                           }
                         }
                       }
