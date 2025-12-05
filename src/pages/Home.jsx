@@ -34,7 +34,7 @@ function Home() {
             <p>
               We are a small property management company focused on buying dated properties 
               and modernizing them for our tenants. We manage all of our properties ourselves 
-              and are looking to grow our portfolio and expand our reach.
+              and are committed to growing our portfolio and expand our reach.
             </p>
             <p>
               We believe our tenants are the foundation of our business and we treat them as family. 

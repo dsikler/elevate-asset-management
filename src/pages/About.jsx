@@ -15,15 +15,13 @@ function About() {
           <div className="about-story">
             <h2>Our Story</h2>
             <p>
-              Elevate Asset Management was founded with a simple yet powerful vision: 
-              to transform dated properties into modern, comfortable homes that our tenants 
-              can be proud to call their own.
+              Real estate isn't just an investment for us. It's where we get to roll up our sleeves and build something tangible.
             </p>
             <p>
-              We started as a small property management company, but our commitment to 
-              excellence and our tenant-first approach has driven our growth. We don't just 
-              manage properties, we invest in them, modernize them, and care for them as if 
-              they were our own homes.
+              I learned the trades growing up from my father, and there's nothing I enjoy more than getting my hands dirty improving distressed properties and turning them into happy family rentals. I've been flipping distressed properties since I was 13 years old, and there's something deeply satisfying about transforming a neglected house into someone's home.
+            </p>
+            <p>
+              At Elevate Asset Management, we take pride in doing the work ourselves. We're not a corporate management company. We're hands-on property owners who understand construction, value quality, and believe that our tenants deserve homes they can be proud of. Every renovation, every repair, every improvement comes from our own commitment to excellence.
             </p>
           </div>
 
