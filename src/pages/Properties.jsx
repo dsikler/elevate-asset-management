@@ -141,10 +141,14 @@ function Properties() {
                     {property.beforeImages.map((image, index) => {
                       let gridStyle = {}
                       if (property.id === 'BM' && property.beforeImages.length === 5) {
-                        // Layout: 2 in top row, 3 in second row
+                        // Layout: 2 in top row (larger), 3 in second row
                         if (index < 2) {
-                          // First row: 2 items in columns 1 and 2
-                          gridStyle = { gridColumn: index === 0 ? '1 / 2' : '2 / 3', gridRow: '1 / 2' }
+                          // First row: 2 items spanning 1.5 columns each, centered
+                          gridStyle = { 
+                            gridColumn: index === 0 ? '1 / 2.5' : '2.5 / 4', 
+                            gridRow: '1 / 2',
+                            justifySelf: 'center'
+                          }
                         } else {
                           // Second row: 3 items in columns 1, 2, 3
                           const col = index - 1
@@ -181,17 +185,25 @@ function Properties() {
                     {property.afterImages.map((image, index) => {
                       let gridStyle = {}
                       if (property.id === 'BM' && property.afterImages.length === 7) {
-                        // Layout: 2 in top row, 3 in middle row, 2 in bottom row
+                        // Layout: 2 in top row (larger), 3 in middle row, 2 in bottom row (larger)
                         if (index < 2) {
-                          // First row: 2 items in columns 1 and 2
-                          gridStyle = { gridColumn: index === 0 ? '1 / 2' : '2 / 3', gridRow: '1 / 2' }
+                          // First row: 2 items spanning 1.5 columns each, centered
+                          gridStyle = { 
+                            gridColumn: index === 0 ? '1 / 2.5' : '2.5 / 4', 
+                            gridRow: '1 / 2',
+                            justifySelf: 'center'
+                          }
                         } else if (index < 5) {
                           // Second row: 3 items in columns 1, 2, 3
                           const col = index - 1
                           gridStyle = { gridColumn: `${col} / ${col + 1}`, gridRow: '2 / 3' }
                         } else {
-                          // Third row: 2 items in columns 1 and 2
-                          gridStyle = { gridColumn: index === 5 ? '1 / 2' : '2 / 3', gridRow: '3 / 4' }
+                          // Third row: 2 items spanning 1.5 columns each, centered
+                          gridStyle = { 
+                            gridColumn: index === 5 ? '1 / 2.5' : '2.5 / 4', 
+                            gridRow: '3 / 4',
+                            justifySelf: 'center'
+                          }
                         }
                       }
                       return (
