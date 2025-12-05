@@ -7,9 +7,6 @@ function Home() {
     <div className="home-page">
       <section className="hero">
         <div className="hero-content">
-          <div className="hero-logo">
-            <img src={logo} alt="Elevate Asset Management" />
-          </div>
           <h1 className="hero-title">Elevate Asset Management</h1>
           <p className="hero-tagline">Modernizing Properties, Elevating Lives</p>
           <p className="hero-description">
@@ -17,7 +14,7 @@ function Home() {
             Your comfort and satisfaction are our foundation.
           </p>
           <div className="hero-cta">
-            <Link to="/properties" className="btn btn-primary">
+            <Link to="/properties" className="btn btn-secondary">
               View Our Properties
             </Link>
             <Link to="/contact" className="btn btn-secondary">

@@ -108,7 +108,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--accent);
+  background: var(--secondary);
   transition: var(--transition);
 }
 
@@ -118,11 +118,11 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: var(--secondary);
 }
 
 .nav-links a.active {
-  color: var(--accent);
+  color: var(--secondary);
 }
 
 .mobile-menu-toggle {
