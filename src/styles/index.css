@@ -61,17 +61,23 @@ body {
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.5rem 20px;
+  padding: 0.25rem 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 140px;
+  min-height: auto;
+}
+
+.nav-logo {
+  padding: 0;
+  margin: 0;
 }
 
 .nav-logo img {
   height: 130px;
   width: auto;
   transition: var(--transition);
+  display: block;
 }
 
 .nav-logo:hover {
