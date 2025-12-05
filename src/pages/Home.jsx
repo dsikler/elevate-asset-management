@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const logo = '/Elevate_Asset_Management_Logo.png'
+const logo = '/elevate_generic_logo.png'
 
 function Home() {
   return (
