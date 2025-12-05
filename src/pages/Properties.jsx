@@ -6,9 +6,10 @@ function Properties() {
     if (count <= 2) return count
     if (count === 3) return 3
     if (count === 4) return 2
-    if (count === 5) return 3 // Will wrap to 2+3
+    if (count === 5) return 2 // Will wrap to 3+2 for uniform rows
     if (count === 6) return 3
-    return 3 // Default to 3 columns for 7+
+    if (count === 7) return 2 // Will wrap to 4+3 for uniform rows
+    return 3 // Default to 3 columns for 8+
   }
 
   const properties = [
