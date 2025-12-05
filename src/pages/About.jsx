@@ -6,7 +6,7 @@ function About() {
       <section className="about-hero">
         <div className="container">
           <h1>About Us</h1>
-          <p className="about-subtitle">Our Story & Mission</p>
+          <p className="about-subtitle">Our Story</p>
         </div>
       </section>
 
@@ -23,20 +23,6 @@ function About() {
             <p>
               At Elevate Asset Management, we take pride in doing the work ourselves. We're not a corporate management company. We're hands-on property owners who understand construction, value quality, and believe that our tenants deserve homes they can be proud of. Every renovation, every repair, every improvement comes from our own commitment to excellence.
             </p>
-          </div>
-
-          <div className="about-mission">
-            <h2>Our Mission</h2>
-            <div className="mission-content">
-              <p className="mission-statement">
-                We are a small property management company focused on buying dated properties 
-                and modernizing them for our tenants. We manage all of our properties ourselves 
-                and are committed to growing our portfolio and expanding our reach.
-              </p>
-              <p className="mission-core">
-                <strong>We believe our tenants are the foundation of our business and we treat them as family.</strong>
-              </p>
-            </div>
           </div>
 
           <div className="about-values">
