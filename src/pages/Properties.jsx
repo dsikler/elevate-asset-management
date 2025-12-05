@@ -13,27 +13,35 @@ function Properties() {
 
   const properties = [
     {
-      id: '506',
-      name: 'Cuyahoga Falls, OH Single Family',
-      address: 'Cuyahoga Falls, OH',
+      id: 'BM',
+      name: 'Stow, OH Single Family',
+      address: 'Stow, OH',
       type: 'Single Family',
       beforeImages: [
-        '/506before1.jpeg',
-        '/506outside_before.JPG'
+        '/BM_before1.jpeg',
+        '/BM_before2.jpeg',
+        '/BM_before3.jpeg',
+        '/BM-before4.jpeg',
+        '/BM_before5.jpeg'
       ],
       afterImages: [
-        '/506after1.JPG',
-        '/506after2.jpeg',
-        '/506outside_after.jpg'
+        '/BM-after1.jpeg',
+        '/BM_after2.jpeg',
+        '/BM_after3.jpeg',
+        '/BM_after4.jpeg',
+        '/BM_after5.jpeg',
+        '/BM_outside0.jpeg',
+        '/BM_outside1.jpeg'
       ],
       features: [
-        'Completely renovated interior',
-        'Modern kitchen with updated appliances',
-        'Fresh paint throughout',
-        'Updated flooring',
-        'Improved exterior curb appeal'
+        'Complete interior renovation',
+        'Modern kitchen with new appliances',
+        'Updated bathrooms',
+        'New flooring throughout',
+        'Fresh paint and finishes',
+        'Landscaped exterior'
       ],
-      description: 'This single-family home in Cuyahoga Falls has been completely transformed from a dated property into a modern, comfortable living space. The renovation includes a full kitchen update, new flooring, fresh paint, and exterior improvements.'
+      description: 'This Stow single-family home showcases our commitment to complete property transformation. The renovation includes a fully modernized kitchen, updated bathrooms, new flooring, and beautiful exterior landscaping, creating a welcoming home environment.'
     },
     {
       id: 'btown',
@@ -65,35 +73,27 @@ function Properties() {
       description: 'This duplex property in Barberton has undergone extensive modernization across both units. Each unit features updated kitchens, new bathrooms, fresh paint, and improved exteriors, providing comfortable living spaces for two families.'
     },
     {
-      id: 'BM',
-      name: 'Stow, OH Single Family',
-      address: 'Stow, OH',
+      id: '506',
+      name: 'Cuyahoga Falls, OH Single Family',
+      address: 'Cuyahoga Falls, OH',
       type: 'Single Family',
       beforeImages: [
-        '/BM_before1.jpeg',
-        '/BM_before2.jpeg',
-        '/BM_before3.jpeg',
-        '/BM-before4.jpeg',
-        '/BM_before5.jpeg'
+        '/506before1.jpeg',
+        '/506outside_before.JPG'
       ],
       afterImages: [
-        '/BM-after1.jpeg',
-        '/BM_after2.jpeg',
-        '/BM_after3.jpeg',
-        '/BM_after4.jpeg',
-        '/BM_after5.jpeg',
-        '/BM_outside0.jpeg',
-        '/BM_outside1.jpeg'
+        '/506after1.JPG',
+        '/506after2.jpeg',
+        '/506outside_after.jpg'
       ],
       features: [
-        'Complete interior renovation',
-        'Modern kitchen with new appliances',
-        'Updated bathrooms',
-        'New flooring throughout',
-        'Fresh paint and finishes',
-        'Landscaped exterior'
+        'Completely renovated interior',
+        'Modern kitchen with updated appliances',
+        'Fresh paint throughout',
+        'Updated flooring',
+        'Improved exterior curb appeal'
       ],
-      description: 'This Stow single-family home showcases our commitment to complete property transformation. The renovation includes a fully modernized kitchen, updated bathrooms, new flooring, and beautiful exterior landscaping, creating a welcoming home environment.'
+      description: 'This single-family home in Cuyahoga Falls has been completely transformed from a dated property into a modern, comfortable living space. The renovation includes a full kitchen update, new flooring, fresh paint, and exterior improvements.'
     }
   ]
 
