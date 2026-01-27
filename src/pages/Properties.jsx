@@ -1,17 +1,6 @@
 import React from 'react'
 
 function Properties() {
-  // Helper function to calculate optimal grid columns
-  const getGridColumns = (count) => {
-    if (count <= 2) return count
-    if (count === 3) return 3
-    if (count === 4) return 2
-    if (count === 5) return 2 // Will wrap to 3+2 for uniform rows
-    if (count === 6) return 3
-    if (count === 7) return 2 // Will wrap to 4+3 for uniform rows
-    return 3 // Default to 3 columns for 8+
-  }
-
   const properties = [
     {
       id: 'BM',
@@ -134,12 +123,7 @@ function Properties() {
               <div className="property-gallery">
                 <div className="gallery-section">
                   <h3>Before</h3>
-                  <div
-                    className="gallery-grid"
-                    style={{
-                      gridTemplateColumns: `repeat(${getGridColumns(property.beforeImages.length)}, 1fr)`
-                    }}
-                  >
+                  <div className="gallery-grid">
                     {property.beforeImages.map((image, index) => (
                       <div
                         key={index}
@@ -149,6 +133,8 @@ function Properties() {
                           src={image}
                           alt={`${property.name} before ${index + 1}`}
                           loading="lazy"
+                          decoding="async"
+                          fetchpriority="low"
                         />
                       </div>
                     ))}
@@ -157,12 +143,7 @@ function Properties() {
 
                 <div className="gallery-section">
                   <h3>After</h3>
-                  <div
-                    className="gallery-grid"
-                    style={{
-                      gridTemplateColumns: `repeat(${getGridColumns(property.afterImages.length)}, 1fr)`
-                    }}
-                  >
+                  <div className="gallery-grid">
                     {property.afterImages.map((image, index) => (
                       <div
                         key={index}
@@ -172,6 +153,8 @@ function Properties() {
                           src={image}
                           alt={`${property.name} after ${index + 1}`}
                           loading="lazy"
+                          decoding="async"
+                          fetchpriority="low"
                         />
                       </div>
                     ))}
