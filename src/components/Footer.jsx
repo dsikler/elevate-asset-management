@@ -10,7 +10,7 @@ function Footer() {
             <h3>Elevate Asset Management</h3>
             <p>Modernizing properties for our tenants, one home at a time.</p>
           </div>
-          
+
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul>
@@ -20,18 +20,18 @@ function Footer() {
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
-          
+
           <div className="footer-section">
             <h4>Contact Info</h4>
             <p>
               <a href="tel:330-285-6035">330-285-6035</a>
             </p>
             <p>
-              <a href="mailto:sikler.dan@gmail.com">sikler.dan@gmail.com</a>
+              <a href="mailto:elevateassetmgmt@gmail.com">elevateassetmgmt@gmail.com</a>
             </p>
           </div>
         </div>
-        
+
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Elevate Asset Management. All rights reserved.</p>
         </div>
@@ -41,4 +41,3 @@ function Footer() {
 }
 
 export default Footer
-

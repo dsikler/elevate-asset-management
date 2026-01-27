@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function Properties() {
   // Helper function to calculate optimal grid columns
@@ -15,7 +15,7 @@ function Properties() {
   const properties = [
     {
       id: 'BM',
-      name: 'Stow, OH Single Family',
+      name: 'Stow Single-Family Home',
       address: 'Stow, OH',
       type: 'Single Family',
       beforeImages: [
@@ -35,18 +35,17 @@ function Properties() {
         '/BM_outside1.jpeg'
       ],
       features: [
-        'Complete interior renovation',
-        'Modern kitchen with new appliances',
-        'Updated bathrooms',
-        'New flooring throughout',
-        'Fresh paint and finishes',
-        'Landscaped exterior'
+        'Refinished original hardwood floors',
+        'Brand new modern kitchen',
+        'Updated bathroom with subway tile shower',
+        'Large fenced-in backyard perfect for families and pets',
+        'Fresh paint throughout'
       ],
-      description: 'This Stow single-family home showcases our commitment to complete property transformation. The renovation includes a fully modernized kitchen, updated bathrooms, new flooring, and beautiful exterior landscaping, creating a welcoming home environment.'
+      description: 'This Stow property showcases a complete transformation with attention to both interior elegance and outdoor living space. Original features meet modern design in this welcoming family home.'
     },
     {
       id: 'btown',
-      name: 'Barberton, OH Duplex',
+      name: 'Barberton Duplex',
       address: 'Barberton, OH',
       type: 'Duplex',
       beforeImages: [
@@ -64,37 +63,42 @@ function Properties() {
         '/btown_outside.jpeg'
       ],
       features: [
-        'Dual-unit modernization',
-        'Updated kitchens in both units',
-        'New bathrooms',
-        'Fresh interior and exterior paint',
-        'Improved landscaping',
-        'Enhanced curb appeal'
+        'Beautifully refinished original hardwood floors',
+        'Modernized kitchen with contemporary finishes',
+        'Updated bathrooms and fresh paint throughout',
+        'Established long-term rental',
+        'Classic duplex providing reliable dual-income opportunity'
       ],
-      description: 'This duplex property in Barberton has undergone extensive modernization across both units. Each unit features updated kitchens, new bathrooms, fresh paint, and improved exteriors, providing comfortable living spaces for two families.'
+      description: 'This classic Barberton duplex features two rental units with distinct character. The upper unit has been completely renovated to blend original charm with modern updates, featuring beautifully refinished hardwood floors and contemporary finishes throughout. The lower unit maintains its traditional character and has been a stable long-term rental.'
     },
     {
       id: '506',
-      name: 'Cuyahoga Falls, OH Single Family',
+      name: 'Cuyahoga Falls Single-Family Home',
       address: 'Cuyahoga Falls, OH',
       type: 'Single Family',
       beforeImages: [
         '/506before1.jpeg',
+        '/506before3.JPG',
+        '/506before4.JPG',
+        '/506before5.jpeg',
         '/506outside_before.JPG'
       ],
       afterImages: [
-        '/506after1.JPG',
         '/506after2.jpeg',
+        '/506after3.jpeg',
+        '/506after4.jpeg',
+        '/506after5.jpeg',
+        '/506after6.jpeg',
         '/506outside_after.jpg'
       ],
       features: [
-        'Completely renovated interior',
-        'Modern kitchen with updated appliances',
-        'Fresh paint throughout',
-        'Updated flooring',
-        'Improved exterior curb appeal'
+        'Fully modernized kitchen with updated appliances and finishes',
+        'Modern farmhouse-style bathroom',
+        'Privacy fence with dedicated dog run area',
+        'Fresh paint throughout interior',
+        'Completely updated exterior including new roof, windows, and siding'
       ],
-      description: 'This single-family home in Cuyahoga Falls has been completely transformed from a dated property into a modern, comfortable living space. The renovation includes a full kitchen update, new flooring, fresh paint, and exterior improvements.'
+      description: 'This single-family home has been completely transformed into a modern, move-in ready space. From the ground up, we have renovated every detail to create a comfortable home with contemporary finishes and curb appeal.'
     }
   ]
 
@@ -115,7 +119,7 @@ function Properties() {
                 <h2>{property.name}</h2>
                 <p className="property-type">{property.type}</p>
               </div>
-              
+
               <p className="property-description">{property.description}</p>
 
               <div className="property-features">
@@ -130,19 +134,19 @@ function Properties() {
               <div className="property-gallery">
                 <div className="gallery-section">
                   <h3>Before</h3>
-                  <div 
+                  <div
                     className="gallery-grid"
                     style={{
                       gridTemplateColumns: `repeat(${getGridColumns(property.beforeImages.length)}, 1fr)`
                     }}
                   >
                     {property.beforeImages.map((image, index) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         className="gallery-item"
                       >
-                        <img 
-                          src={image} 
+                        <img
+                          src={image}
                           alt={`${property.name} before ${index + 1}`}
                           loading="lazy"
                         />
@@ -153,19 +157,19 @@ function Properties() {
 
                 <div className="gallery-section">
                   <h3>After</h3>
-                  <div 
+                  <div
                     className="gallery-grid"
                     style={{
                       gridTemplateColumns: `repeat(${getGridColumns(property.afterImages.length)}, 1fr)`
                     }}
                   >
                     {property.afterImages.map((image, index) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         className="gallery-item"
                       >
-                        <img 
-                          src={image} 
+                        <img
+                          src={image}
                           alt={`${property.name} after ${index + 1}`}
                           loading="lazy"
                         />
@@ -183,4 +187,3 @@ function Properties() {
 }
 
 export default Properties
-
