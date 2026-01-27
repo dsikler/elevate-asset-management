@@ -452,7 +452,8 @@ body {
   display: grid;
   gap: 1.5rem;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: stretch;
+  justify-content: center;
   align-items: stretch;
 }
 

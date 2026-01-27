@@ -1,6 +1,19 @@
 import React from 'react'
 
 function Properties() {
+  const getGridColumns = (count) => {
+    if (count <= 2) return count
+
+    const candidates = [4, 3, 2]
+    for (const columns of candidates) {
+      if (count >= columns && count % columns !== 1) {
+        return columns
+      }
+    }
+
+    return 3
+  }
+
   const properties = [
     {
       id: 'BM',
@@ -123,7 +136,12 @@ function Properties() {
               <div className="property-gallery">
                 <div className="gallery-section">
                   <h3>Before</h3>
-                  <div className="gallery-grid">
+                  <div
+                    className="gallery-grid"
+                    style={{
+                      gridTemplateColumns: `repeat(${getGridColumns(property.beforeImages.length)}, minmax(220px, 1fr))`
+                    }}
+                  >
                     {property.beforeImages.map((image, index) => (
                       <div
                         key={index}
@@ -143,7 +161,12 @@ function Properties() {
 
                 <div className="gallery-section">
                   <h3>After</h3>
-                  <div className="gallery-grid">
+                  <div
+                    className="gallery-grid"
+                    style={{
+                      gridTemplateColumns: `repeat(${getGridColumns(property.afterImages.length)}, minmax(220px, 1fr))`
+                    }}
+                  >
                     {property.afterImages.map((image, index) => (
                       <div
                         key={index}
