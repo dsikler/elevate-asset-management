@@ -98,7 +98,7 @@ function Properties() {
         'Fresh paint throughout interior',
         'Completely updated exterior including new roof, windows, and siding'
       ],
-      description: 'This single-family home has been completely transformed into a modern, move-in ready space. From the ground up, we have renovated every detail to create a comfortable home with contemporary finishes and curb appeal.'
+      description: 'This single-family home has been completely transformed into a modern, move-in ready space. From the ground up, we\'ve renovated every detail to create a comfortable home with contemporary finishes and curb appeal.'
     }
   ]
 
