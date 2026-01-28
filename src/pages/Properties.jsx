@@ -5,13 +5,24 @@ function Properties() {
     if (count <= 2) return count
 
     const candidates = [4, 3, 2]
+    let bestColumns = 3
+    let bestScore = Number.POSITIVE_INFINITY
+
     for (const columns of candidates) {
-      if (count >= columns && count % columns !== 1) {
-        return columns
+      if (count < columns) continue
+      const remainder = count % columns
+      const emptySlots = remainder === 0 ? 0 : columns - remainder
+      const orphanPenalty = remainder === 1 ? 100 : 0
+      const rows = Math.ceil(count / columns)
+      const score = orphanPenalty + emptySlots * 10 + rows
+
+      if (score < bestScore) {
+        bestScore = score
+        bestColumns = columns
       }
     }
 
-    return 3
+    return bestColumns
   }
 
   const properties = [
