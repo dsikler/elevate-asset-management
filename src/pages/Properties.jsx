@@ -150,7 +150,7 @@ function Properties() {
                   <div
                     className="gallery-grid"
                     style={{
-                      gridTemplateColumns: `repeat(${getGridColumns(property.beforeImages.length)}, minmax(220px, 1fr))`
+                      '--gallery-columns': getGridColumns(property.beforeImages.length)
                     }}
                   >
                     {property.beforeImages.map((image, index) => (
@@ -175,7 +175,7 @@ function Properties() {
                   <div
                     className="gallery-grid"
                     style={{
-                      gridTemplateColumns: `repeat(${getGridColumns(property.afterImages.length)}, minmax(220px, 1fr))`
+                      '--gallery-columns': getGridColumns(property.afterImages.length)
                     }}
                   >
                     {property.afterImages.map((image, index) => (
