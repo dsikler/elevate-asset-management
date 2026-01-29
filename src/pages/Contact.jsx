@@ -19,7 +19,7 @@ function Contact() {
     e.preventDefault()
     // In a real application, you would send this to a backend
     // For now, we'll use mailto as a fallback
-    const mailtoLink = `mailto:sikler.dan@gmail.com?subject=Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}\n\nFrom: ${formData.email}`
+    const mailtoLink = `mailto:elevateassetmgmt@gmail.com?subject=Contact from ${formData.name}&body=${encodeURIComponent(formData.message)}\n\nFrom: ${formData.email}`
     window.location.href = mailtoLink
     setFormStatus('Thank you! Your message has been sent.')
     setFormData({ name: '', email: '', message: '' })
@@ -61,7 +61,7 @@ function Contact() {
                   <div className="contact-icon">✉️</div>
                   <div>
                     <h3>Email</h3>
-                    <p><a href="mailto:sikler.dan@gmail.com">sikler.dan@gmail.com</a></p>
+                    <p><a href="mailto:elevateassetmgmt@gmail.com">elevateassetmgmt@gmail.com</a></p>
                   </div>
                 </div>
               </div>
