@@ -5,8 +5,8 @@ function About() {
     <div className="about-page">
       <section className="about-hero">
         <div className="container">
+          <p className="about-subtitle">Who We Are</p>
           <h1>About Us</h1>
-          <p className="about-subtitle">Our Story</p>
         </div>
       </section>
 
@@ -29,22 +29,18 @@ function About() {
             <h2>Our Values</h2>
             <div className="values-grid">
               <div className="value-card">
-                <div className="value-icon">🏡</div>
                 <h3>Quality First</h3>
                 <p>We never cut corners. Every renovation is executed with meticulous attention to detail using quality materials that stand the test of time.</p>
               </div>
               <div className="value-card">
-                <div className="value-icon">🤝</div>
                 <h3>Respect &amp; Trust</h3>
                 <p>Our tenants aren't just customers. They're the foundation of our business. We build lasting relationships based on mutual respect, dignity, and trust.</p>
               </div>
               <div className="value-card">
-                <div className="value-icon">⚡</div>
                 <h3>Always Responsive</h3>
                 <p>Direct management means direct access. When you need us, you reach the owners, not a call center. Fast response times and personalized service aren't promises, they're our standard.</p>
               </div>
               <div className="value-card">
-                <div className="value-icon">📈</div>
                 <h3>Thoughtful Growth</h3>
                 <p>We're expanding our portfolio strategically, acquiring properties that align with our vision. Growth never comes at the expense of our high standards or personal touch.</p>
               </div>

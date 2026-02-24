@@ -33,8 +33,8 @@ function Contact() {
     <div className="contact-page">
       <section className="contact-hero">
         <div className="container">
+          <p className="about-subtitle">Get In Touch</p>
           <h1>Contact Us</h1>
-          <p>Get in touch with Elevate Asset Management</p>
         </div>
       </section>
 
@@ -50,7 +50,6 @@ function Contact() {
               
               <div className="contact-details">
                 <div className="contact-item">
-                  <div className="contact-icon">📞</div>
                   <div>
                     <h3>Phone</h3>
                     <p><a href="tel:330-285-6035">330-285-6035</a></p>
@@ -58,7 +57,6 @@ function Contact() {
                 </div>
                 
                 <div className="contact-item">
-                  <div className="contact-icon">✉️</div>
                   <div>
                     <h3>Email</h3>
                     <p><a href="mailto:elevateassetmgmt@gmail.com">elevateassetmgmt@gmail.com</a></p>

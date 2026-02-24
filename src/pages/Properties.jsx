@@ -32,20 +32,20 @@ function Properties() {
       address: 'Stow, OH',
       type: 'Single Family',
       beforeImages: [
-        '/BM_before1.jpeg',
-        '/BM_before2.jpeg',
-        '/BM_before3.jpeg',
-        '/BM-before4.jpeg',
-        '/BM_before5.jpeg'
+        '/images/BM/BM_before1.jpeg',
+        '/images/BM/BM_before2.jpeg',
+        '/images/BM/BM_before3.jpeg',
+        '/images/BM/BM-before4.jpeg',
+        '/images/BM/BM_before5.jpeg'
       ],
       afterImages: [
-        '/BM-after1.jpeg',
-        '/BM_after2.jpeg',
-        '/BM_after3.jpeg',
-        '/BM_after4.jpeg',
-        '/BM_after5.jpeg',
-        '/BM_outside0.jpeg',
-        '/BM_outside1.jpeg'
+        '/images/BM/BM-after1.jpeg',
+        '/images/BM/BM_after2.jpeg',
+        '/images/BM/BM_after3.jpeg',
+        '/images/BM/BM_after4.jpeg',
+        '/images/BM/BM_after5.jpeg',
+        '/images/BM/BM_outside0.jpeg',
+        '/images/BM/BM_outside1.jpeg'
       ],
       features: [
         'Refinished original hardwood floors',
@@ -62,18 +62,18 @@ function Properties() {
       address: 'Barberton, OH',
       type: 'Duplex',
       beforeImages: [
-        '/btown_before1.jpeg',
-        '/btown_before3.jpeg',
-        '/btown_before4.jpeg',
-        '/btown_before5.jpeg'
+        '/images/btown/btown_before1.jpeg',
+        '/images/btown/btown_before3.jpeg',
+        '/images/btown/btown_before4.jpeg',
+        '/images/btown/btown_before5.jpeg'
       ],
       afterImages: [
-        '/btown_after1.jpeg',
-        '/btown_after2.jpeg',
-        '/btown_after3.jpeg',
-        '/btown_after4.jpeg',
-        '/btown_after5.jpeg',
-        '/btown_outside.jpeg'
+        '/images/btown/btown_after1.jpeg',
+        '/images/btown/btown_after2.jpeg',
+        '/images/btown/btown_after3.jpeg',
+        '/images/btown/btown_after4.jpeg',
+        '/images/btown/btown_after5.jpeg',
+        '/images/btown/btown_outside.jpeg'
       ],
       features: [
         'Beautifully refinished original hardwood floors',
@@ -90,19 +90,22 @@ function Properties() {
       address: 'Cuyahoga Falls, OH',
       type: 'Single Family',
       beforeImages: [
-        '/506before1.jpeg',
-        '/506before3.JPG',
-        '/506before4.JPG',
-        '/506before5.jpeg',
-        '/506outside_before.JPG'
+        '/images/506/506before1.jpeg',
+        '/images/506/506before3.JPG',
+        '/images/506/506before4.JPG',
+        '/images/506/506before5.jpeg',
+        '/images/506/506outside_before.JPG'
       ],
       afterImages: [
-        '/506after2.jpeg',
-        '/506after3.jpeg',
-        '/506after4.jpeg',
-        '/506after5.jpeg',
-        '/506after6.jpeg',
-        '/506outside_after.jpg'
+        '/images/506/506_kitchen_2026.jpeg',
+        '/images/506/506_living_room2_2026.jpeg',
+        '/images/506/506_livingroom2_2026.jpeg',
+        '/images/506/506_bathroom_2026.jpeg',
+        '/images/506/506_bedroom1_2026.jpeg',
+        '/images/506/506_bedroom2_2026.jpeg',
+        '/images/506/506_office_2026.jpeg',
+        '/images/506/506_mudroom_2026.jpeg',
+        '/images/506/506outside_after.jpg'
       ],
       features: [
         'Fully modernized kitchen with updated appliances and finishes',
@@ -119,8 +122,8 @@ function Properties() {
     <div className="properties-page">
       <section className="properties-hero">
         <div className="container">
-          <h1>Our Properties</h1>
-          <p>Explore our portfolio of modernized rental properties</p>
+          <p className="about-subtitle">Our Portfolio</p>
+          <h1>Properties</h1>
         </div>
       </section>
 

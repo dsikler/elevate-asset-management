@@ -6,8 +6,8 @@ function Home() {
     <div className="home-page">
       <section className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">Elevate Asset Management</h1>
           <p className="hero-tagline">Modernizing Properties, Elevating Lives</p>
+          <h1 className="hero-title">Elevate Asset Management</h1>
           <p className="hero-description">
             We transform dated properties into modern, comfortable homes for our tenants. 
             Your comfort and satisfaction are our foundation.
@@ -49,22 +49,18 @@ function Home() {
           <h2>Why Choose Elevate Asset Management?</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">🏠</div>
               <h3>Modernized Properties</h3>
               <p>Every property we manage has been completely renovated and modernized for your comfort.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">👨‍👩‍👧‍👦</div>
               <h3>Family-Focused</h3>
               <p>We treat our tenants like family, providing personalized service and care.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">🔧</div>
               <h3>Direct Management</h3>
               <p>We manage all properties ourselves, ensuring quick response times and quality service.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">📈</div>
               <h3>Growing Portfolio</h3>
               <p>We're expanding our reach and continuously adding new, modernized properties.</p>
             </div>
