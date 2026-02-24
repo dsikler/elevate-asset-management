@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  color-scheme: light only;
+}
+
 :root {
   --primary: #1e3d58;
   --secondary: #ffae29;
@@ -848,6 +852,11 @@ h1, h2, h3, h4, h5, h6 {
 .footer-contact {
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }
 
 .footer-contact a {
@@ -855,6 +864,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   opacity: 0.8;
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .footer-contact a:hover {
@@ -865,6 +875,16 @@ h1, h2, h3, h4, h5, h6 {
 .footer-divider {
   margin: 0 1rem;
   opacity: 0.3;
+}
+
+@media (max-width: 480px) {
+  .footer-contact {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-divider {
+    display: none;
+  }
 }
 
 .footer-bottom {
