@@ -13,10 +13,10 @@ function Home() {
             Your comfort and satisfaction are our foundation.
           </p>
           <div className="hero-cta">
-            <Link to="/properties" className="btn btn-secondary">
+            <Link to="/properties" className="btn btn-primary">
               View Our Properties
             </Link>
-            <Link to="/contact" className="btn btn-secondary">
+            <Link to="/contact" className="btn btn-primary">
               Get In Touch
             </Link>
           </div>
