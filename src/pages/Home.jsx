@@ -19,7 +19,7 @@ function Home() {
             <Link to="/contact" className="btn btn-primary">
               Get In Touch
             </Link>
-            <Link to="/about" className="btn btn-outline">
+            <Link to="/about" className="btn btn-primary">
               About Us
             </Link>
           </div>
