@@ -133,7 +133,7 @@ function Properties() {
             <div key={property.id} className="property-card">
               <div className="property-header">
                 <h2>{property.name}</h2>
-                <p className="property-type">{property.type}</p>
+                <p className="property-type">{property.address}</p>
               </div>
 
               <p className="property-description">{property.description}</p>
