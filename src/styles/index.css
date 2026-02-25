@@ -59,14 +59,17 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  background: #ffffff;
+  background: rgba(245, 240, 226, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(90deg, var(--accent), var(--secondary), var(--accent)) 1;
   z-index: 1000;
-  transition: box-shadow 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navigation.scrolled {
+  background: rgba(245, 240, 226, 0.95);
   box-shadow: 0 4px 20px rgba(30, 61, 88, 0.12);
 }
 
@@ -906,7 +909,9 @@ h1, h2, h3, h4, h5, h6 {
     top: 86px;
     left: 0;
     right: 0;
-    background: #ffffff;
+    background: rgba(245, 240, 226, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     flex-direction: column;
     padding: 2rem;
     box-shadow: 0 5px 20px rgba(30, 61, 88, 0.1);
@@ -994,7 +999,7 @@ img {
     color-scheme: only light !important;
   }
   .navigation, .nav-links {
-    background-color: #ffffff !important;
+    background-color: rgba(245, 240, 226, 0.95) !important;
   }
   .app, .container, section, div, p, span, li, a, h1, h2, h3, h4, h5, h6 {
     color: inherit;
