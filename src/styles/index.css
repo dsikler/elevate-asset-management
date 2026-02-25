@@ -267,21 +267,24 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   letter-spacing: -0.5px;
   position: relative;
+  color: var(--primary);
 }
 
 .hero-tagline {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--primary);
   margin-bottom: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
+  opacity: 0.85;
 }
 
 .hero-description {
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
-  opacity: 0.95;
+  color: var(--primary);
+  opacity: 0.9;
   line-height: 1.8;
 }
 
@@ -417,15 +420,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 0.75rem;
   position: relative;
+  color: var(--primary);
 }
 
 .properties-hero p,
 .about-hero .about-subtitle,
 .contact-hero p {
   font-size: 1.15rem;
-  opacity: 0.8;
-  font-weight: 300;
+  opacity: 0.85;
+  font-weight: 400;
   letter-spacing: 0.5px;
+  color: var(--primary);
 }
 
 .properties-list {
