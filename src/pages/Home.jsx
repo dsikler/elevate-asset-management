@@ -9,8 +9,8 @@ function Home() {
           <p className="hero-tagline">Modernizing Properties, Elevating Lives</p>
           <h1 className="hero-title">Elevate Asset Management</h1>
           <p className="hero-description">
-            We transform dated properties into modern, comfortable homes for our tenants. 
-            Your comfort and satisfaction are our foundation.
+            We buy dated properties and transform them into modern, comfortable homes. 
+            We manage everything ourselves and treat our tenants like family.
           </p>
           <div className="hero-cta">
             <Link to="/properties" className="btn btn-primary">
@@ -19,26 +19,8 @@ function Home() {
             <Link to="/contact" className="btn btn-primary">
               Get In Touch
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="intro-section">
-        <div className="container">
-          <div className="intro-content">
-            <h2>Welcome to Elevate Asset Management</h2>
-            <p>
-              We are a small property management company focused on buying dated properties 
-              and modernizing them for our tenants. We manage all of our properties ourselves 
-              and are committed to growing our portfolio and expanding our reach.
-            </p>
-            <p>
-              We believe our tenants are the foundation of our business and we treat them as family. 
-              Every property we acquire undergoes a complete transformation, ensuring our tenants 
-              have a beautiful, modern place to call home.
-            </p>
             <Link to="/about" className="btn btn-outline">
-              Learn More About Us
+              About Us
             </Link>
           </div>
         </div>
