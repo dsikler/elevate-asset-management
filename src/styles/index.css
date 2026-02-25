@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  background: linear-gradient(160deg, #152c40 0%, var(--primary) 40%, #254d6b 100%);
+  background: linear-gradient(160deg, var(--accent) 0%, #f96a3a 40%, var(--secondary) 100%);
   color: var(--white);
   padding: 140px 20px 60px;
   text-align: center;
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--secondary), var(--accent));
+  background: linear-gradient(90deg, var(--primary), #254d6b, var(--primary));
 }
 
 .hero::after {
@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 174, 41, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-tagline {
   font-size: 1.1rem;
-  color: var(--secondary);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -374,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 .properties-hero,
 .about-hero,
 .contact-hero {
-  background: linear-gradient(160deg, #152c40 0%, var(--primary) 40%, #254d6b 100%);
+  background: linear-gradient(160deg, var(--accent) 0%, #f96a3a 40%, var(--secondary) 100%);
   color: var(--white);
   padding: 140px 20px 60px;
   text-align: center;
@@ -391,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--secondary), var(--accent));
+  background: linear-gradient(90deg, var(--primary), #254d6b, var(--primary));
 }
 
 .properties-hero::after,
@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 174, 41, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
